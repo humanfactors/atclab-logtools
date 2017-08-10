@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/golang/example/stringutil"
 	"io/ioutil"
 	"regexp"
 )
@@ -14,11 +13,11 @@ func main() {
 }
 
 func textreader() string {
-	f, err := ioutil.ReadFile("atc.xml") // just pass the file name
+	f, err := ioutil.ReadFile("./atc/atc.xml") // just pass the file name
 	if err != nil {
 		fmt.Print(err)
 	}
 	filecontents := string(f) // convert content to a 'string'
 	fmt.Println(filecontents) // print the content as a 'string'
-	return string(filecontents)
+	return filecontents
 }
