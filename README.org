@@ -1,2 +1,11 @@
-* atclab-logtools
-Logging extraction tools for the ATC simulator
+* ATCLAB-LogTools
+Logging extraction tools for the ATC simulator.
+
+* Instructions for Input Data
+
+* ATC XML Conventions
+
+It is a substantial challenge to document a single convention scheme for the ATC trials. Frustratingly, as we measure new phenonemna, our data structures are changing. For example, putting aside just filename conventions, every single person has a different condition with different naming schemes.
+
+
+***
