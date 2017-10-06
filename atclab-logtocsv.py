@@ -17,7 +17,7 @@ responded_set = []
 @click.argument('input', type=click.Path(exists=True))
 def main(input):
     global participantid
-    participantid = re.search(r'(\d+)',click.format_filename(input)).group(1)
+    participantid = re.search(r'participant-(\d+)',click.format_filename(input)).group(1)
     print("Extracting participant %s" % (participantid))
     cleanedlogfile = grep_rawlog(click.format_filename(input))
     print("Grepping Done for participant %s" % (participantid))
